@@ -1,0 +1,92 @@
+<div class="rightnav-container">
+  <header>
+    <div class="search-input-wrapper">
+      <mat-icon>search</mat-icon>
+      <input type="text" placeholder="Search" />
+    </div>
+    <div class="notification-btn">
+      <mat-icon>notifications</mat-icon>
+    </div>
+    <div class="upload-btn">
+      <mat-icon>cloud_upload</mat-icon>
+    </div>
+  </header>
+  <main>
+    <div class="section-details">
+      <h5 class="section-heading">Suggestions For You</h5>
+      <a href="#">
+        <span class="section-option">See All</span>
+      </a>
+    </div>
+    <ul class="Suggestions-list">
+      <li *ngFor="let item of suggestionsData?.suggestions">
+        <div class="account-wrapper">
+          <div class="primary-avatar-wrapper">
+            <img class="primary-avatar" [src]="item.imageUrl" alt="image.jpg" />
+          </div>
+          <div class="username-container">
+            <span class="name">{{ item.name }}</span>
+            <span class="user-name">{{ item.username }}</span>
+          </div>
+        </div>
+        <button
+          [class]="!item.follow ? 'follow-btn' : 'follow-btn-active'"
+          (click)="toggleFollow(item)"
+        >
+          {{ item.follow ? "  Unfollow" : "Follow" }}
+        </button>
+      </li>
+    </ul>
+    <div class="horizontal-line"></div>
+    <div class="latest-wrapper">
+      <h5 class="section-heading">Latest Post Activity</h5>
+      <div class="latest-post">
+        <div class="post-details-wrapper">
+          <div class="img-wrapper">
+            <img src="../../../assets/images/stairs.jpg" alt="image.jpg" />
+          </div>
+          <div class="post-details-sub-wrapper">
+            <span class="name">Minimalist Stairs</span>
+            <ul>
+              <li>
+                <span
+                  ><button class="action-btn">
+                    <mat-icon>favorite</mat-icon>20
+                  </button></span
+                >
+              </li>
+              <li>
+                <span
+                  ><button class="action-btn">
+                    <mat-icon>comment</mat-icon>20
+                  </button></span
+                >
+              </li>
+              <li>
+                <span
+                  ><button class="action-btn">
+                    <mat-icon>save</mat-icon>20
+                  </button></span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="#">
+          <span class="section-option">See All Posts</span>
+        </a>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#"> Popular</a></li>
+        <li><a href="#">Language</a></li>
+      </ul>
+    </nav>
+  </footer>
+</div>

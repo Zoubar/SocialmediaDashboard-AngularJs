@@ -1,0 +1,102 @@
+{
+  "feeds": {
+    "all": [
+      {
+        "id": 1,
+        "user": "Youssef Alami",
+        "postOwnerImageUrl": "../../../../../../assets/images/eric-clapton.jpg",
+        "imageUrl": "../../../../../../assets/images/Untitled.jpg",
+        "likes": 150,
+        "comments": 15,
+        "likedByOwner": true
+      },
+      {
+        "id": 2,
+        "user": "Ali Bennani",
+        "postOwnerImageUrl": "../../../../../../assets/images/jimi-hendrix.jpg",
+        "imageUrl": "../../../../../../assets/images/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg",
+        "likes": 250,
+        "comments": 35,
+        "likedByOwner": false
+      },
+      {
+        "id": 3,
+        "user": "Khaled Mansour",
+        "postOwnerImageUrl": "../../../../../../assets/images/cohen.jpg",
+        "imageUrl": "../../../../../../assets/images/istockphoto-1093110112-612x612.jpg",
+        "likes": 100,
+        "comments": 10,
+        "likedByOwner": true
+      },
+      {
+        "id": 4,
+        "user": "Omar Taleb",
+        "postOwnerImageUrl": "../../../../../../assets/images/dylan.jpg",
+        "imageUrl": "../../../../../../assets/images/flowers-276014_1280.jpg",
+        "likes": 300,
+        "comments": 50,
+        "likedByOwner": false
+      }
+    ],
+    "following": [
+      {
+        "id": 3,
+        "user": "Khaled Mansour",
+        "postOwnerImageUrl": "../../../../../../assets/images/cohen.jpg",
+        "imageUrl": "../../../../../../assets/images/istockphoto-1093110112-612x612.jpg",
+        "likes": 100,
+        "comments": 10,
+        "likedByOwner": true
+      },
+      {
+        "id": 1,
+        "user": "Youssef Alami",
+        "postOwnerImageUrl": "../../../../../../assets/images/eric-clapton.jpg",
+        "imageUrl": "../../../../../../assets/images/Untitled.jpg",
+        "likes": 150,
+        "comments": 15,
+        "likedByOwner": true
+      }
+    ],
+    "newest": [
+      {
+        "id": 4,
+        "user": "Omar Taleb",
+        "postOwnerImageUrl": "../../../../../../assets/images/dylan.jpg",
+        "imageUrl": "../../../../../../assets/images/flowers-276014_1280.jpg",
+        "likes": 300,
+        "comments": 50,
+        "likedByOwner": false
+      }
+    ],
+    "popular": [
+      {
+        "id": 2,
+        "user": "Ali Bennani",
+        "postOwnerImageUrl": "../../../../../../assets/images/jimi-hendrix.jpg",
+        "imageUrl": "../../../../../../assets/images/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg",
+        "likes": 250,
+        "comments": 35,
+        "likedByOwner": false
+      },
+      {
+        "id": 3,
+        "user": "Khaled Mansour",
+        "postOwnerImageUrl": "../../../../../../assets/images/cohen.jpg",
+        "imageUrl": "../../../../../../assets/images/istockphoto-1093110112-612x612.jpg",
+        "likes": 100,
+        "comments": 10,
+        "likedByOwner": true
+      },
+      {
+        "id": 4,
+        "user": "Youssef Zoubairi",
+        "postOwnerImageUrl": "../../../../../../assets/images/dylan.jpg",
+        "imageUrl": "../../../../../../assets/images/flowers-276014_1280.jpg",
+        "likes": 300,
+        "comments": 50,
+        "likedByOwner": false
+      }
+    ]
+  }
+}

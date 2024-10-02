@@ -1,0 +1,84 @@
+.primary-btn {
+  @include shared-btn;
+  color: $gray-color;
+  background-color: transparent;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+.primary-btn-active {
+  @include shared-btn;
+  color: $black-color;
+  mat-icon {
+    color: $primary-color;
+  }
+}
+.drop-down-btn {
+  width: 100%;
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  color: $black-color;
+  font: 600 1.4rem $main-font;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.follow-btn {
+  @include follow-btn;
+  background-color: $primary-color;
+  color: $white-color;
+  border: 0.1rem solid $primary-color;
+  &:hover {
+    background-color: $primary-color-hover;
+  }
+}
+.follow-btn-active {
+  @include follow-btn;
+  background-color: $white-color;
+  color: $black-color;
+  border: 0.1rem solid $gray-color;
+  &:hover {
+    background-color: $light-gray-color;
+  }
+}
+
+.selected-option {
+  span {
+    color: $primary-color;
+  }
+}
+span {
+  .liked {
+    color: red;
+  }
+}
+.action-btn {
+  font-size: 0.8rem;
+  height: 3rem;
+  @include center-content;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: $gray-color;
+  background-color: transparent;
+  mat-icon {
+    font-size: 1.4rem;
+    height: 1.4rem;
+  }
+}
+.burger-menu {
+  position: absolute;
+  background-color: transparent;
+  width: fit-content;
+  height: fit-content;
+  border: none;
+  right: 3rem;
+  top: 3rem;
+  cursor: pointer;
+  mat-icon {
+    color: $primary-color;
+  }
+}

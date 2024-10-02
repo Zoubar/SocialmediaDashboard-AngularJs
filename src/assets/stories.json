@@ -1,0 +1,46 @@
+{
+  "stories": [
+    {
+      "id": 1,
+      "user": "Me",
+      "imageUrl": "../../../../../../assets/images/cc.jpg",
+      "seen": true
+    },
+    {
+      "id": 3,
+      "user": "Maryam",
+      "imageUrl": "../../../../../assets/images/etta.jpg",
+      "seen": true
+    },
+    {
+      "id": 6,
+      "user": "Saeed",
+      "imageUrl": "../../../../../assets/images/dylan.jpg",
+      "seen": true
+    },
+    {
+      "id": 2,
+      "user": "Ali",
+      "imageUrl": "../../../../../assets/images/jimi-hendrix.jpg",
+      "seen": false
+    },
+    {
+      "id": 4,
+      "user": "Fatima",
+      "imageUrl": "../../../../../assets/images/masha.jpg",
+      "seen": false
+    },
+    {
+      "id": 5,
+      "user": "Youssef",
+      "imageUrl": "../../../../../assets/images/eric-clapton.jpg",
+      "seen": false
+    },
+    {
+      "id": 7,
+      "user": "Ahmed",
+      "imageUrl": "../../../../../assets/images/cohen.jpg",
+      "seen": false
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+<div class="leftnav-container">
+  <a href="#" class="logo-anchor">
+    <h1 class="app-logo">
+      <img src="../../../assets/images/Group 15.svg" alt="img" />Cofeed
+    </h1>
+  </a>
+  <button class="burger-menu" (click)="onMenuToggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <div
+    [class]="!isBurgerMenuActive ? 'menu-wrapper-block' : 'menu-wrapper-none'"
+  >
+    <h5 class="section-heading">Menu</h5>
+    <div class="list-wrapper">
+      <ul class="sidenav-list" *ngFor="let item of menuElms">
+        <li>
+          <a
+            [routerLink]="item.routerLink"
+            [routerLinkActive]="'primary-btn-active'"
+            class="primary-btn"
+          >
+            <mat-icon>{{ item.icon }}</mat-icon
+            >{{ item.name }}
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="drop-down-container">
+      <button class="drop-down-btn" (click)="onToggleAccount()">
+        Account
+        <mat-icon>
+          {{ account ? "keyboard_arrow_up" : "keyboard_arrow_down" }}</mat-icon
+        >
+      </button>
+      <div class="account-wrapper" *ngIf="account">
+        <div class="primary-avatar-wrapper">
+          <img
+            class="primary-avatar"
+            src="../../../assets/images/cc.jpg"
+            alt="account-owner.jpg"
+          />
+        </div>
+        <div class="username-container">
+          <span class="name">Yassine</span>
+          <span class="user-name">@Yassine</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

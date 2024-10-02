@@ -1,0 +1,218 @@
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./abstracts/functions";
+
+@import "./base/helpers";
+@import "./base/reset";
+@import "./base/typography";
+
+@import "./components/buttons";
+@import "./components/slider";
+
+@import "./layout/header";
+@import "./layout/sidebar";
+@import "./layout/footer";
+@import "./layout/forms";
+@import "./layout/navigation";
+
+@import "./pages/about";
+@import "./pages/contact";
+@import "./pages/home";
+
+@import "./themes/themes";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+
+  .layout-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    app-left-nav {
+      background-color: $white-color;
+      height: 100%;
+      width: 18%;
+      padding: 2rem 4rem;
+    }
+    .content {
+      position: relative;
+      height: 100%;
+      width: 56%;
+      padding: 1rem 5rem;
+      background-color: $light-gray-color;
+      .vertical-line {
+        position: absolute;
+        width: 0.1rem;
+        height: 90%;
+        right: 0rem;
+        top: 5%;
+        background-color: $gray-color;
+      }
+    }
+    app-right-nav {
+      height: 100%;
+      width: 26%;
+      padding: 2rem 4rem;
+      background-color: $light-gray-color;
+    }
+  }
+}
+// Media queries for laptops Bigger screen
+@media (min-width: 1366px) {
+  html {
+    font-size: 11.5px;
+  }
+}
+@media (min-width: 1440px) {
+  html {
+    font-size: 12.5px;
+  }
+}
+@media (min-width: 1540px) {
+  html {
+    font-size: 13.5px;
+  }
+}
+@media (min-width: 1680px) {
+  html {
+    font-size: 14.5px;
+  }
+}
+@media (min-width: 1800px) {
+  html {
+    font-size: 15.5px;
+  }
+}
+// Media queries for laptops smaller screen
+@media (max-width: 1025px) {
+  html {
+    font-size: 8.5px;
+  }
+}
+@media (max-width: 950px) {
+  html {
+    font-size: 8px;
+  }
+}
+// Media queries for devices smaller than 800 px
+@media (max-width: 800px) {
+  html {
+    font-size: 8px;
+    .layout-container {
+      flex-direction: column;
+      height: 100vh;
+      app-left-nav {
+        height: fit-content;
+        .primary-btn {
+          font: 400 1.5rem "Poppins", sans-serif;
+        }
+        position: relative;
+        width: 100%;
+        height: fit-content;
+
+        .leftnav-container {
+          flex-direction: row;
+          gap: 3rem;
+          .logo-anchor {
+            position: absolute;
+            left: 3rem;
+            top: 3rem;
+          }
+          .burger-menu {
+            display: block;
+          }
+          .menu-wrapper-none {
+            display: none;
+          }
+          .menu-wrapper-block {
+            padding: 8rem 0rem 0rem 0rem;
+            display: flex;
+            flex-direction: column;
+            h5 {
+              display: none;
+            }
+          }
+          .list-wrapper {
+            .sidenav-list {
+              margin-bottom: 2rem;
+            }
+          }
+        }
+      }
+      .content {
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 5rem;
+        order: 3;
+        .vertical-line {
+          display: none;
+        }
+        .home-page-container {
+          height: 100%;
+          main {
+            .grid-container {
+              height: 100%;
+              grid-template-columns: 1fr;
+              grid-template-rows: 1fr;
+              gap: 4rem;
+              .grid-item {
+                width: 80%;
+                margin: 0 auto;
+                height: 30rem;
+                .posted-feed-img {
+                  height: 85%;
+                }
+              }
+            }
+          }
+        }
+      }
+      app-right-nav {
+        padding-top: 6rem;
+        .mat-icon {
+          font-size: 2.3rem;
+          @include center-content;
+        }
+        background-color: $white-color;
+        width: 100%;
+        @include center-content;
+        height: fit-content;
+        .rightnav-container {
+          width: 100%;
+          header {
+            width: 100%;
+            justify-content: center;
+            gap: 3rem;
+
+            .search-input-wrapper {
+              input {
+                width: 25rem;
+              }
+            }
+          }
+          main {
+            display: none;
+          }
+          footer {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 7.5px;
+  }
+}
+@media (max-width: 400px) {
+  html {
+    font-size: 6.5px;
+  }
+}

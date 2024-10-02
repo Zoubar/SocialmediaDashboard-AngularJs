@@ -1,0 +1,25 @@
+{
+  "suggestions": [
+    {
+      "id": 1,
+      "name": "Yasmina Amrani",
+      "username": "@Yasmina_",
+      "imageUrl": "../../../assets/images/kim.jpg",
+      "follow": false
+    },
+    {
+      "id": 2,
+      "name": "Khaled Mansour",
+      "username": "@Khaled_",
+      "imageUrl": "../../../assets/images/mel-gibson.jpg",
+      "follow": true
+    },
+    {
+      "id": 3,
+      "name": "Omar Taleb",
+      "username": "@Omar_",
+      "imageUrl": "../../../assets/images/adrian.jpg",
+      "follow": false
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+<div class="section-details">
+  <h5 class="section-heading">Feeds</h5>
+
+  <ul class="section-options-list">
+    <li>
+      <button
+        class="action-btn"
+        (click)="filterFeeds('all')"
+        [class.selected-option]="currentFilter === 'all'"
+      >
+        <span class="feed-section-option">All</span>
+      </button>
+    </li>
+    <li>
+      <button
+        class="action-btn"
+        (click)="filterFeeds('following')"
+        [class.selected-option]="currentFilter === 'following'"
+      >
+        <span class="feed-section-option">Following</span>
+      </button>
+    </li>
+    <li>
+      <button
+        class="action-btn"
+        (click)="filterFeeds('newest')"
+        [class.selected-option]="currentFilter === 'newest'"
+      >
+        <span class="feed-section-option">Newest</span>
+      </button>
+    </li>
+    <li>
+      <button
+        class="action-btn"
+        (click)="filterFeeds('popular')"
+        [class.selected-option]="currentFilter === 'popular'"
+      >
+        <span class="feed-section-option">Popular</span>
+      </button>
+    </li>
+  </ul>
+</div>
+<div class="grid-container">
+  <div class="grid-item" *ngFor="let item of filteredFeeds">
+    <div class="posted-feed-img">
+      <img [src]="item.imageUrl" alt="" />
+    </div>
+    <div class="posted-feed-details">
+      <div class="post-owner-account">
+        <div class="secondary-avatar-wrapper">
+          <img class="secondary-avatar" [src]="item.postOwnerImageUrl" alt="" />
+        </div>
+        <span class="name">{{ item.user }}</span>
+      </div>
+      <ul class="post-reactions-list">
+        <li>
+          <span
+            ><button
+              class="action-btn"
+              [class.liked]="item.likedByOwner === true"
+              (click)="toggleLike(item)"
+            >
+              <mat-icon>favorite</mat-icon>{{ item.likes }}
+            </button></span
+          >
+        </li>
+        <li>
+          <span
+            ><button class="action-btn">
+              <mat-icon>comment</mat-icon>{{ item.comments }}
+            </button></span
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

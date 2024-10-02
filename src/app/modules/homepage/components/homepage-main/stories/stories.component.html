@@ -1,0 +1,13 @@
+<ul class="stories-list">
+  <li *ngFor="let item of storiesData?.stories">
+    <a href="#">
+      <div
+        class="story-img-wrapper"
+        [ngClass]="item.seen ? 'seen-story-img-wrapper' : ''"
+      >
+        <img [src]="item.imageUrl" alt="image.jpg" />
+      </div>
+      <span class="name">{{ item.user }}</span>
+    </a>
+  </li>
+</ul>

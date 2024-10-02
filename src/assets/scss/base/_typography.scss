@@ -1,0 +1,22 @@
+.section-heading h5 {
+  font: 600 1.4rem $main-font;
+  color: $black-color;
+}
+.section-option {
+  font: 500 1.4rem $main-font;
+  color: $primary-color;
+  &:hover {
+    color: $primary-color-hover;
+  }
+}
+.section-options-active {
+  color: $gray-color;
+}
+.name {
+  font: 400 1.2rem $main-font;
+  color: $black-color;
+}
+.user-name {
+  font: 300 1rem $main-font;
+  color: $gray-color;
+}

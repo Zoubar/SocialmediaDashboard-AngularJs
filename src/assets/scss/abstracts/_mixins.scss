@@ -1,0 +1,24 @@
+@mixin center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin shared-btn {
+  font: 400 1.2rem $main-font;
+  border: none;
+  cursor: pointer;
+  width: 15rem;
+  height: 4rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+@mixin follow-btn {
+  width: 6rem;
+  height: 2.5rem;
+  @include center-content;
+  border-radius: 0.5rem;
+  font: 400 1.2rem $main-font;
+  cursor: pointer;
+}

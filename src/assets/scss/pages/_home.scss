@@ -1,0 +1,120 @@
+.home-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+  header {
+    width: 100%;
+    height: fit-content;
+    app-stories {
+      width: 100%;
+      .stories-list {
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        display: flex;
+        gap: 2.5rem;
+        li {
+          display: inline-block;
+          a {
+            @include center-content;
+            flex-direction: column;
+            gap: 0.2rem;
+            .story-img-wrapper {
+              width: 5.5rem;
+              height: 5.5rem;
+              border-radius: 10rem;
+              border: 0.3rem solid $primary-color;
+              img {
+                width: 99%;
+                height: 99%;
+                border: 0.2rem solid transparent;
+                border-radius: 10rem;
+              }
+            }
+            .seen-story-img-wrapper {
+              border-color: rgb(177, 177, 177) !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  main {
+    width: 100%;
+    height: 80%;
+    .section-details {
+      display: flex;
+      justify-content: space-between;
+
+      .section-options-list {
+        display: flex;
+        gap: 1.5rem;
+        .feed-section-option {
+          font: 500 1.3rem $main-font;
+        }
+      }
+    }
+    .grid-container {
+      width: 100%;
+      height: fit-content;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+      grid-template-rows: repeat(2, 1fr); /* Two rows with equal height */
+      gap: 2rem;
+    }
+    .grid-item {
+      width: 100%;
+      height: 19rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .posted-feed-img {
+        width: 100%;
+        height: 78%;
+        img {
+          width: 100%;
+          height: 100%;
+          border: 0.4rem solid #ffffff;
+          border-radius: 1rem;
+        }
+      }
+      .posted-feed-details {
+        display: flex;
+        justify-content: space-between;
+        .post-owner-account {
+          display: flex;
+          gap: 0.5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .post-reactions-list {
+          display: flex;
+          gap: 1rem;
+          li {
+            span {
+              button {
+                font-size: 1.2rem;
+                display: flex;
+                align-items: center;
+                gap: 0.3rem;
+                mat-icon {
+                  font-size: 2rem;
+                  height: 100% !important;
+                  width: 100% !important;
+                  display: flex;
+                  align-items: center;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
