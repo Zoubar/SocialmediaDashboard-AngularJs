@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "SocialmediaDashboard:build:production"
+              "browserTarget": "Blackstone-coding-task:build:production"
             },
             "development": {
-              "browserTarget": "SocialmediaDashboard:build:development"
+              "browserTarget": "Blackstone-coding-task:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "SocialmediaDashboard:build"
+            "browserTarget": "Blackstone-coding-task:build"
           }
         },
         "test": {
